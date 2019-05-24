@@ -8,20 +8,10 @@ $(function() {
         storageBucket: "emma-ea74d.appspot.com",
         messagingSenderId: "95300595436"
     };
-    const firebaseConfig = {
-        apiKey: "AIzaSyAuAONbz-JcaQ3f9k2uRuhk6iIv2Igy16M",
-        authDomain: "rocketium-challenge.firebaseapp.com",
-        databaseURL: "https://rocketium-challenge.firebaseio.com",
-        //projectId: "rocketium-challenge",
-        storageBucket: "rocketium-challenge.appspot.com",
-        messagingSenderId: "49050577731"
-        //appId: "1:49050577731:web:989143f9dbfecb19"
-      };
       
     firebase.initializeApp(config);
 
     var editorId = Url.queryString("id") || "_";
-    //var editorId = "jehad+article";
 
     var LS_THEME_KEY = "editor-theme";
     function getTheme() {
